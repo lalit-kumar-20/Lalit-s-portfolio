@@ -17,7 +17,7 @@ function ResumeNew() {
 
   return (
     <div>
-      <Container fluid className="resume-section">
+      <Container >
         {/* <Particle /> */}
         <Row style={{ justifyContent: "center", position: "relative" ,color:"#ff0066"}}>
           <Button
