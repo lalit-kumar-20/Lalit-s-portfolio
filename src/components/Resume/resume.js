@@ -35,7 +35,7 @@ function ResumeNew() {
         <Row style={{justifyContent: "center", position: "relative"}} >
           <Document  file={pdf} >
         
-            <Page pageNumber={1} scale={width > 786 ? 1.6 : 0.5} />
+            <Page pageNumber={1} scale={width > 786 ? 1.6 : 0.6} />
          
             {/* <Page pageNumber={1} noData={<></>} /> */}
           </Document>
