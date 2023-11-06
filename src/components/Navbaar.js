@@ -141,26 +141,26 @@ function NavBaar() {
                 borderRadius: "5rem",
                 width: "30px",
                 height: "30px",
+                
               }}
               src={bloglogo}
               className="img-fluid logo "
               alt="brand"
             />
 
-            <a
-              style={{
-                marginRight: "2.4rem",
-                marginLeft: "0.5rem",
-                marginTop: "0rem",
-              }}
-              className="navbar-brand ms-auto"
-              href="/"
-            >
-              Blogs
-            </a>
+           
+              <Button
+                href="https://medium.com/@lalit007lodhi"
+                target="_blank"
+                rel="noreferrer"
+                className="btn bg-transparent"
+                style={{color:"white", marginRight:"3.1rem",border: "1px solid black"}}
+              >Blogs</Button>
+              
+            
 
             <Button
-              style={{ backgroundColor: "#706bb2", width: "4.2rem" }}
+              style={{ backgroundColor: "#706bb2", width: "4.2rem",border: "1px solid black" }}
               href="https://github.com/lalit-kumar-20"
               target="_blank"
               className="fork-btn-outer"
