@@ -26,7 +26,6 @@ function NavBaar() {
             height: "5.7rem",
           }}
           src={profilelogo}
-          className=""
           alt="brand"
         />
         <Container>
