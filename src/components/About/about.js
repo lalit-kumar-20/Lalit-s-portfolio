@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import CodingProfiles from "./CodingProfiles";
 import Skillset from "./skillset";
 import AboutContent from "./aboutContent";
-import laptopImg from "../../Assests/homeProfile.png";
+import laptopImg from "../../Assests/about_image .png";
 import Tools from "./tools";
 import GithubStats from "./githubStats";
 
@@ -36,7 +36,7 @@ const About = () => {
             </h1>
             <AboutContent />
           </Col>
-          <Col md={5} style={{ paddingTop: "6.5rem" }} className="about-img">
+          <Col  style={{ paddingTop: "6.5rem" }} className="about-img">
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>

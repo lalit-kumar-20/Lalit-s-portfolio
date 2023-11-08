@@ -19,13 +19,11 @@ function App() {
 
         <ParticleBackground />  
         <Navbar/>
-   
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="/project" element={<Projects />} /> */}
           <Route path="/about" element={<About />} />
           <Route exact path="/resume" element={<Resume />} />
-          {/* <Route path="*" element={<Navigate to="/"/>} /> */}
         </Routes>
         <Footer/>
         </Router>
