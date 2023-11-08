@@ -83,7 +83,7 @@ function NavBaar() {
                 marginTop: "0rem",
               }}
               className="navbar-brand ms-auto"
-              href="/"
+              href="/about"
             >
               About
             </a>

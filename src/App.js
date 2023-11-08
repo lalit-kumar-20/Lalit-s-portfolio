@@ -4,6 +4,7 @@ import Navbar from './components/Navbaar'
 import Footer from "./components/Footer"
 import ParticleBackground from "./components/particles"
 import Resume from "./components/Resume/resume"
+import About from "./components/About/about"
 import {
   BrowserRouter as Router,
   Route,
@@ -22,7 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="/project" element={<Projects />} /> */}
-          {/* <Route path="/about" element={<About />} /> */}
+          <Route path="/about" element={<About />} />
           <Route exact path="/resume" element={<Resume />} />
           {/* <Route path="*" element={<Navigate to="/"/>} /> */}
         </Routes>

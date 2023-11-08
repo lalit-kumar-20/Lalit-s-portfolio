@@ -60,7 +60,7 @@ const secondPageHome = () => {
               <div style={{ marginTop: "0.8rem" }}>
                 My field of Interest's are building new &nbsp;
                 <i>
-                  <b style={{ color: "#4DD0E1" }} className="purple">
+                  <b style={{ color: "#4DD0E1" }}>
                     Web Technologies
                   </b>{" "}
                   and <b style={{ color: "#4DD0E1" }}>Products </b>
@@ -74,12 +74,12 @@ const secondPageHome = () => {
               <br />
               Whenever possible, I also apply my passion for developing products
               with{" "}
-              <b style={{ color: "#4DD0E1" }} className="purple">
+              <b style={{ color: "#4DD0E1" }}>
                 Node.js
               </b>{" "}
               and
               <i>
-                <b style={{ color: "#4DD0E1" }} className="purple">
+                <b style={{ color: "#4DD0E1" }}>
                   {" "}
                   Modern Javascript Library{" "}
                 </b>
@@ -93,7 +93,7 @@ const secondPageHome = () => {
                 <b style={{ color: "#4DD0E1" }}> Next.js</b>
               </i>
               <br />
-              <a style={{ fontSize: "1.6rem", color: "#ff33cc" }} href="/">
+              <a style={{ fontSize: "1.6rem", color: "#ff33cc" }} href="http://localhost:3000/about">
                 Know more...
               </a>
             </p>
