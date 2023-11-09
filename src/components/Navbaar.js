@@ -107,7 +107,7 @@ function NavBaar() {
                 marginTop: "0rem",
               }}
               className="navbar-brand ms-auto"
-              href="/"
+              href="/project"
             >
               {" "}
               Projects

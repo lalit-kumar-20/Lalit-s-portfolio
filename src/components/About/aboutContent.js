@@ -58,8 +58,8 @@ const aboutContent = () => {
               </span>{" "}
               and{" "}
               <span style={{ fontFamily: "cursive", color: "#4DD0E1" }}>
-                System Design{" "}
-              </span>{" "}
+                System Design
+              </span>.
             </h1>
             <h1
               style={{

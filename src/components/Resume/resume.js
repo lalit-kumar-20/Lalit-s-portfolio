@@ -18,7 +18,6 @@ function ResumeNew() {
   return (
     <div>
       <Container >
-        {/* <Particle /> */}
         <Row style={{ justifyContent: "center", position: "relative" ,color:"#ff0066"}}>
           <Button
             href={pdf}
