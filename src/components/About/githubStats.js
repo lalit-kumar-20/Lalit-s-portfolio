@@ -1,11 +1,12 @@
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
+import style from "./styles.about";
 
 const githubStats = () => {
   return (
     <>
-    <Row style={{ color:"white",justifyContent: "center", marginTop:"1.2rem",paddingBottom: "2rem" }}>
+    <Row style={style.SkillsetRowStyle}>
       <GitHubCalendar
         username="lalit-kumar-20"
         blockSize={15}

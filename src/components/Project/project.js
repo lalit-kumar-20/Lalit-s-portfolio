@@ -1,30 +1,32 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./projectCard";
- import iNoteBookIcon from "../../Assests/iNotebook_image.png";
+import iNoteBookIcon from "../../Assests/iNotebook_image.png";
+import MSDesigner_Logo from "../../Assests/MS_Designer_logo.png";
+import GlobalNews_logo from "../../Assests/global_news_logo.png";
+import MR_Engine_logo from "../../Assests/MR_Engine.jpeg";
+import TextAnalyzer_logo from "../../Assests/Text_Analyzer_logo.jpeg";
 
+import styles from "./Project.styles";
 
-
-const Project=()=>{
-
+const Project = () => {
   return (
     <div>
-      <Container style={{color:"white",marginBottom:"2rem"}}>
-      <Row style={{ justifyContent: "center", position: "relative" ,marginTop:"10rem"}}>
-      <h1 style={{fontSize:"2.7rem",marginLeft:"2rem",}}>
-          My Recent <strong style={{color:"#4DD0E1",fontFamily:"cursive"}}>Works </strong>
-        </h1>
-       
+      <Container style={styles.projectContainerStyle}>
+        <Row style={styles.projectContentRowStyle}>
+          <h1 style={styles.projectheadingRowStyle}>
+            My Recent <strong style={styles.projectStrongStyle}>Works </strong>
+          </h1>
         </Row>
-        <Row style={{ justifyContent: "center", position: "relative" ,marginTop:"1rem"}}>
-        <p style={{ color: "white" ,marginLeft:"2rem",fontSize:"1.3rem"}}>
-          Here are a few projects I've worked on recently.
-        </p>         
+        <Row style={styles.projectHeadingRowStyles}>
+          <p style={styles.projectCardParaStyles}>
+            Here are a few projects I've worked on recently.
+          </p>
         </Row>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px",color:"black" }}>
-        <Col md={4} className="project-card">
+        <Row style={styles.projectCardContentStyles}>
+          <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={iNoteBookIcon}
+              imgPath={MSDesigner_Logo}
               isBlog={false}
               title="Microsoft Designer Web App"
               description="During my internship at Microsoft, I had the exciting opportunity to work on a live project Designer App.
@@ -32,10 +34,10 @@ const Project=()=>{
               by building an Action focused web app. An app for BGR removal that does the job instantly and then
               prompts users to Sign-in/Sign-up/continue their edit on a full fledged designer app.
               Please find the link of Microsoft Designer App."
-            //   ghLink="https://designer.microsoft.com/"
+              //   ghLink="https://designer.microsoft.com/"
               demoLink="https://designer.microsoft.com/"
             />
-            </Col>
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={iNoteBookIcon}
@@ -50,7 +52,7 @@ const Project=()=>{
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={iNoteBookIcon}
+              imgPath={TextAnalyzer_logo}
               isBlog={false}
               title="Text Analyzer"
               description="Text-Analyzer Website
@@ -64,25 +66,24 @@ const Project=()=>{
               and also see its preview in below lines.
               "
               ghLink="https://github.com/lalit-kumar-20/Text-Analyser-"
-            //   demoLink="https://github.com/lalit-kumar-20/Text-Analyser-"
+              //   demoLink="https://github.com/lalit-kumar-20/Text-Analyser-"
             />
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              style={{width:"5rem"}}
-              imgPath={iNoteBookIcon}
+              imgPath={MR_Engine_logo}
               isBlog={false}
               title="Movie Recommendation Engine"
               description="Recommendation Engine is a machine learning project which suggest the genres of movies according to your
               taste by analyzing the previous content watched by the users.
               The model recommends a set of movies to user based on Machine Learning Techniques.This Model is built using the collaborative filtering based on the Latent-Factor-Model"
               ghLink="https://github.com/lalit-kumar-20/Recommendation-Engine-Latent-Factor-Model"
-            //   demoLink="https://github.com/lalit-kumar-20/Recommendation-Engine-Latent-Factor-Model"
+              //   demoLink="https://github.com/lalit-kumar-20/Recommendation-Engine-Latent-Factor-Model"
             />
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={iNoteBookIcon}
+              imgPath={GlobalNews_logo}
               isBlog={false}
               title="Global News"
               description="It a website named Global-News
@@ -92,19 +93,13 @@ const Project=()=>{
               it has some features Nevigation, infinite Scroll, Spinner, Loader.
               It seems like a pretty Website."
               ghLink="https://github.com/lalit-kumar-20/Global-News-Website"
-            //   demoLink="https://github.com/lalit-kumar-20/Global-News-Website"
+              //   demoLink="https://github.com/lalit-kumar-20/Global-News-Website"
             />
           </Col>
-          
-          </Row>
-          
+        </Row>
       </Container>
     </div>
   );
-}
+};
 
 export default Project;
-
-
-
-

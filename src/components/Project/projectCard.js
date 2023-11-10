@@ -3,49 +3,29 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import styles from "./Project.styles";
 
 const ProjectCards = (props) => {
   return (
-    <Card
-      style={{
-        marginTop: "3rem",
-        boxColor: "#4DD0E1",
-        borderRadius: "1rem",
-        backgroundColor: "#99ccff",
-        height: "38rem",
-        padding: "0.4rem",
-        marginBottom: "0.1rem",
-      }}
-      className="project-card-view"
-    >
+    <Card style={styles.CardStyles}>
       <Card.Img
-        style={{ borderRadius: "1rem" }}
-        variant="top"
+        style={styles.CardImage}
+        variant="btn btn-dark"
         src={props.imgPath}
         alt="card-img"
       />
       <Card.Body>
-        <Card.Title style={{ display: "flex", justifyContent: "center" }}>
-          {props.title}
-        </Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
-        </Card.Text>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginTop: "1.5rem",
-          }}
-        >
+        <Card.Title style={styles.CardTitle}>{props.title}</Card.Title>
+        <Card.Text style={styles.CardText}>{props.description}</Card.Text>
+        <div style={styles.CardButtonDivStyle}>
           {props.ghLink && (
             <Button
-              variant="secondary"
+              variant="btn btn-dark"
               href={props.ghLink}
               target="_blank"
-              style={{ marginRight: "1.5rem" }}
+              style={styles.CardButtonStyle}
             >
-              <BsGithub style={{ display: "inline-block" }} /> &nbsp;
+              <BsGithub style={styles.CardGithubStyle} /> &nbsp;
               {props.isBlog ? "Blog" : "GitHub"}
             </Button>
           )}
@@ -55,8 +35,12 @@ const ProjectCards = (props) => {
           {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
 
           {!props.isBlog && props.demoLink && (
-            <Button variant="secondary" href={props.demoLink} target="_blank">
-              <CgWebsite style={{ display: "inline-block" }} /> &nbsp;
+            <Button
+              variant="btn btn-dark"
+              href={props.demoLink}
+              target="_blank"
+            >
+              <CgWebsite style={styles.CardCgWebsite} /> &nbsp;
               {"Demo"}
             </Button>
           )}

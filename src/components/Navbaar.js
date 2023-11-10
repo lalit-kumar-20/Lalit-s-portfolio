@@ -11,52 +11,27 @@ import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 
 import { AiFillStar } from "react-icons/ai";
+import style from "./Navbar.Style";
 
-function NavBaar() {
+const NavBaar = () => {
   return (
     <>
       <Navbar fixed="top" expand="md">
-        <img
-          style={{
-            alignItems: "center",
-            marginLeft: "3rem",
-            display: "flex",
-            borderRadius: "5rem",
-            width: "9rem",
-            height: "5.7rem",
-          }}
-          src={profilelogo}
-          alt="brand"
-        />
+        <img style={style.NavbarlogoStyle} src={profilelogo} alt="brand" />
         <Container>
           <nav
-            style={{
-              marginLeft: "23rem",
-              marginTop: "0rem",
-              fontFamily: "sans-serif",
-              fontSize: "large",
-            }}
+            style={style.NavbarTextStyle}
             className="navbar navbar-lg navbar-dark  "
           >
             <img
-              style={{
-                alignItems: "center",
-                display: "flex",
-                borderRadius: "5rem",
-                width: "30px",
-                height: "30px",
-              }}
+              style={style.NavbarRoutinglogoStyle}
               src={logo}
               className="img-fluid logo "
               alt="brand"
             />
 
             <a
-              style={{
-                marginRight: "3.5rem",
-                marginLeft: "0.4rem",
-                marginTop: "0rem",
-              }}
+              style={style.NavbarAnchorTagStyle}
               className="navbar-brand ms-auto"
               href="/"
             >
@@ -64,48 +39,28 @@ function NavBaar() {
             </a>
 
             <img
-              style={{
-                alignItems: "center",
-                display: "flex",
-                borderRadius: "5rem",
-                width: "30px",
-                height: "30px",
-              }}
+              style={style.NavbarRoutinglogoStyle}
               src={aboutlogo}
               className="img-fluid logo "
               alt="brand"
             />
 
             <a
-              style={{
-                marginRight: "3.5rem",
-                marginLeft: "0.4rem",
-                marginTop: "0rem",
-              }}
+              style={style.NavbarAnchorTagStyle}
               className="navbar-brand ms-auto"
               href="/about"
             >
               About
             </a>
             <img
-              style={{
-                alignItems: "center",
-                display: "flex",
-                borderRadius: "5rem",
-                width: "30px",
-                height: "30px",
-              }}
+              style={style.NavbarRoutinglogoStyle}
               src={projectlogo}
               className="img-fluid logo "
               alt="brand"
             />
 
             <a
-              style={{
-                marginRight: "3.5rem",
-                marginLeft: "0.4rem",
-                marginTop: "0rem",
-              }}
+              style={style.NavbarAnchorTagStyle}
               className="navbar-brand ms-auto"
               href="/project"
             >
@@ -113,61 +68,48 @@ function NavBaar() {
               Projects
             </a>
             <img
-              style={{
-                alignItems: "center",
-                display: "flex",
-                borderRadius: "5rem",
-                width: "30px",
-                height: "30px",
-              }}
+              style={style.NavbarRoutinglogoStyle}
               src={resumelogo}
               className="img-fluid logo "
               alt="brand"
             />
 
-            
-              <Link style={{
-                marginRight: "2.5rem",
-                marginLeft: "0rem",
-                color:"white"
+            <a
+              style={style.NavbarAnchorTagStyle}
+              className="navbar-brand ms-auto"
+              href="/resume"
+            >
+              {" "}
+              Resume
+            </a>
 
-              }} className="nav-link" to="/resume">Resume</Link>
-              
             <img
-              style={{
-                alignItems: "center",
-                display: "flex",
-                borderRadius: "5rem",
-                width: "30px",
-                height: "30px",
-                
-              }}
+              style={style.NavbarRoutinglogoStyle}
               src={bloglogo}
               className="img-fluid logo "
               alt="brand"
             />
 
-           
-              <Button
-                href="https://medium.com/@lalit007lodhi"
-                target="_blank"
-                rel="noreferrer"
-                className="btn bg-transparent"
-                style={{color:"white", marginRight:"3.1rem",border: "1px solid black"}}
-              >Blogs</Button>
-              
-            
+            <Button
+              href="https://medium.com/@lalit007lodhi"
+              target="_blank"
+              rel="noreferrer"
+              className="btn bg-transparent"
+              style={style.NavbarMediumButtonStyle}
+            >
+              Blogs
+            </Button>
 
             <Button
-              style={{ backgroundColor: "#706bb2", width: "4.2rem",border: "1px solid black" }}
+              style={style.NavbarGithubButtonStyle}
               href="https://github.com/lalit-kumar-20"
               target="_blank"
               className="fork-btn-outer"
             >
               <>
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <CgGitFork style={{ fontSize: "1.2em", color: "white" }} />
-                  <AiFillStar style={{ fontSize: "1.1em", color: "white" }} />
+                <div style={style.NavbarGithubIconStyle}>
+                  <CgGitFork style={style.NavbarGithubIconAlignStyle} />
+                  <AiFillStar style={style.NavbarGithubIconAlignStyle} />
                 </div>
               </>
             </Button>
@@ -176,6 +118,6 @@ function NavBaar() {
       </Navbar>
     </>
   );
-}
+};
 
 export default NavBaar;

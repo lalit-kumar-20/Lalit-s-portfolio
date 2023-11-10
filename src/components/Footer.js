@@ -5,20 +5,14 @@ import {
   AiOutlineFacebook,
   AiFillInstagram,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaMediumM } from "react-icons/fa";
+import style from "./Footer.style";
 
-function Footer() {
+const Footer = () => {
   let date = new Date();
   let year = date.getFullYear();
   return (
-    <div
-      style={{
-        marginTop: "1.5rem",
-        marginBottom: "2rem",
-        color: "white",
-        textAlign: "center",
-      }}
-    >
+    <div style={style.FooterDivStyle}>
       <Container fluid className="footer">
         <Row>
           <Col md="4" className="footer-copywright">
@@ -30,50 +24,46 @@ function Footer() {
           <Col md="4" className="footer-body">
             <a
               href="https://github.com/lalit-kumar-20"
-              style={{ color: "white" }}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <AiFillGithub
-                style={{ display: "inline-block", marginRight: "1.5rem" }}
-              />
+              <AiFillGithub style={style.FooterIconAlignmentStyle} />
             </a>
             <a
               href="https://www.facebook.com/lalitrajput.lalitrajput.716/"
-              style={{ color: "white" }}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <AiOutlineFacebook
-                style={{ display: "inline-block", marginRight: "1.5rem" }}
-              />
+              <AiOutlineFacebook style={style.FooterIconAlignmentStyle} />
             </a>
 
             <a
               href="https://www.linkedin.com/in/lalit-lodhi-467677201/"
-              style={{ color: "white" }}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedinIn
-                style={{ display: "inline-block", marginRight: "1.5rem" }}
-              />
+              <FaLinkedinIn style={style.FooterIconAlignmentStyle} />
             </a>
             <a
               href="https://www.instagram.com/lalitlodhi_official/"
-              style={{ color: "white" }}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <AiFillInstagram
-                style={{ display: "inline-block", marginRight: "1.5rem" }}
-              />
+              <AiFillInstagram style={style.FooterIconAlignmentStyle} />
+            </a>
+            <a
+              href="https://medium.com/@lalit007lodhi"
+              target="_blank"
+              rel="noreferrer"
+              className="icon-colour home-social-icons"
+            >
+              <FaMediumM style={style.FooterIconAlignmentStyle} />
             </a>
           </Col>
         </Row>
       </Container>
     </div>
   );
-}
+};
 
 export default Footer;

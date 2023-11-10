@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
 import {
@@ -16,68 +16,67 @@ import {
   SiSqlite,
   SiJest,
   SiNextdotjs,
-  
 } from "react-icons/si";
 
 import { FaServer } from "react-icons/fa";
+import style from "./styles.about";
 
- const skillset = () => {
+const skillset = () => {
   return (
     <>
-    
-    <Row style={{ marginLeft:"1.5rem",justifyContent: "center", marginTop:"3rem",color:"white"}}>
-   <div>
-    <Col style={{display: "inline-block",marginRight:"1.5rem",height:"8rem",width:"14rem",borderColor:"#4DD0E1",borderWidth:"0.1rem",borderRadius:"0.35rem",}} >
-      <SiC style={{marginTop:"1.5rem",marginLeft:"3.5rem",width:"4rem",height:"5rem"}} />
-    </Col>
-    <Col style={{display: "inline-block",marginRight:"1.5rem",height:"8rem",width:"14rem",borderColor:"#4DD0E1",borderWidth:"0.1rem",borderRadius:"0.35rem",}} >
-      <CgCPlusPlus style={{marginTop:"1.5rem",marginLeft:"3.5rem",width:"5rem",height:"5rem"}} />
-    </Col>
-    <Col  style={{display: "inline-block",marginRight:"1.5rem",height:"8rem",width:"14rem",borderColor:"#4DD0E1",borderWidth:"0.1rem",borderRadius:"0.35rem",}}>
-      <DiJavascript1 style={{marginTop:"1.3rem",marginLeft:"3.5rem",width:"5rem",height:"5rem"}} />
-    </Col>
-    <Col  style={{display: "inline-block",marginRight:"1.5rem",height:"8rem",width:"14rem",borderColor:"#4DD0E1",borderWidth:"0.1rem",borderRadius:"0.35rem",}}>
-      <SiTypescript style={{marginTop:"1.5rem",marginLeft:"3.5rem",width:"4.5rem",height:"4.5rem"}} />
-    </Col>
-    <Col  style={{display: "inline-block",marginRight:"1.5rem",height:"8rem",width:"14rem",borderColor:"#4DD0E1",borderWidth:"0.1rem",borderRadius:"0.35rem",}}>
-      <DiReact style={{marginTop:"1.3rem",marginLeft:"3.5rem",width:"5rem",height:"5rem"}} />
-    </Col>
-    </div>
-    <div style={{marginTop:"2rem"}}>
-    <Col style={{display: "inline-block",marginRight:"1.5rem",height:"8rem",width:"14rem",borderColor:"#4DD0E1",borderWidth:"0.1rem",borderRadius:"0.35rem",}}>
-      <DiNodejs style={{marginTop:"1.3rem",marginLeft:"3.5rem",width:"5rem",height:"5rem"}} />
-    </Col>
-    <Col style={{display: "inline-block",marginRight:"1.5rem",height:"8rem",width:"14rem",borderColor:"#4DD0E1",borderWidth:"0.1rem",borderRadius:"0.35rem",}}>
-      <FaServer style={{marginTop:"1.3rem",marginLeft:"3.5rem",width:"5rem",height:"5rem"}} />
-    </Col>
-    <Col style={{display: "inline-block",marginRight:"1.5rem",height:"8rem",width:"14rem",borderColor:"#4DD0E1",borderWidth:"0.1rem",borderRadius:"0.35rem",}}>
-      <SiSqlite style={{marginTop:"1.3rem",marginLeft:"3.5rem",width:"5rem",height:"5rem"}} />
-    </Col>
-    <Col style={{display: "inline-block",marginRight:"1.5rem",height:"8rem",width:"14rem",borderColor:"#4DD0E1",borderWidth:"0.1rem",borderRadius:"0.35rem",}}>
-      <SiMysql style={{marginTop:"1.3rem",marginLeft:"3rem",width:"5rem",height:"5rem"}} />
-    </Col>
-    <Col style={{display: "inline-block",marginRight:"1.5rem",height:"8rem",width:"14rem",borderColor:"#4DD0E1",borderWidth:"0.1rem",borderRadius:"0.35rem",}}>
-      <DiMongodb style={{marginTop:"1.3rem",marginLeft:"3.5rem",width:"5rem",height:"5rem"}} />
-    </Col>
-    </div>
+      <Row style={style.SkillsetRowStyle}>
+        <div>
+          <Col style={style.SkillsetColStyle}>
+            <SiC style={style.SkillsetIconStyle} />
+          </Col>
+          <Col style={style.SkillsetColStyle}>
+            <CgCPlusPlus style={style.SkillsetIconStyle} />
+          </Col>
+          <Col style={style.SkillsetColStyle}>
+            <DiJavascript1 style={style.SkillsetIconStyle} />
+          </Col>
+          <Col style={style.SkillsetColStyle}>
+            <SiTypescript style={style.SkillsetIconStyle} />
+          </Col>
+          <Col style={style.SkillsetColStyle}>
+            <DiReact style={style.SkillsetIconStyle} />
+          </Col>
+        </div>
+        <div style={style.SkillsetDivStyle}>
+          <Col style={style.SkillsetColStyle}>
+            <DiNodejs style={style.SkillsetIconStyle} />
+          </Col>
+          <Col style={style.SkillsetColStyle}>
+            <FaServer style={style.SkillsetIconStyle} />
+          </Col>
+          <Col style={style.SkillsetColStyle}>
+            <SiSqlite style={style.SkillsetIconStyle} />
+          </Col>
+          <Col style={style.SkillsetColStyle}>
+            <SiMysql style={style.SkillsetIconStyle} />
+          </Col>
+          <Col style={style.SkillsetColStyle}>
+            <DiMongodb style={style.SkillsetIconStyle} />
+          </Col>
+        </div>
 
-    <div style={{marginTop:"2rem"}}>
-    <Col style={{display: "inline-block",marginRight:"1.5rem",height:"8rem",width:"14rem",borderColor:"#4DD0E1",borderWidth:"0.1rem",borderRadius:"0.35rem",}}>
-      <DiGit style={{marginTop:"1.3rem",marginLeft:"3.5rem",width:"5rem",height:"5rem"}}/>
-    </Col>
-    <Col style={{display: "inline-block",marginRight:"1.5rem",height:"8rem",width:"14rem",borderColor:"#4DD0E1",borderWidth:"0.1rem",borderRadius:"0.35rem",}} >
-      <SiJest style={{marginTop:"1.3rem",marginLeft:"3.5rem",width:"5rem",height:"5rem"}} />
-    </Col>
-    <Col style={{display: "inline-block",marginRight:"1.5rem",height:"8rem",width:"14rem",borderColor:"#4DD0E1",borderWidth:"0.1rem",borderRadius:"0.35rem",}} >
-      <SiNextdotjs style={{marginTop:"1.3rem",marginLeft:"3.5rem",width:"5rem",height:"5rem"}} />
-    </Col>
-    <Col style={{display: "inline-block",marginRight:"1.5rem",height:"8rem",width:"14rem",borderColor:"#4DD0E1",borderWidth:"0.1rem",borderRadius:"0.35rem",}} >
-      <DiPython style={{marginTop:"1.3rem",marginLeft:"3.5rem",width:"5rem",height:"5rem"}} />
-    </Col>
-    </div>
-  </Row>
-  </>
-  )
-}
+        <div style={style.SkillsetDivStyle}>
+          <Col style={style.SkillsetColStyle}>
+            <DiGit style={style.SkillsetIconStyle} />
+          </Col>
+          <Col style={style.SkillsetColStyle}>
+            <SiJest style={style.SkillsetIconStyle} />
+          </Col>
+          <Col style={style.SkillsetColStyle}>
+            <SiNextdotjs style={style.SkillsetIconStyle} />
+          </Col>
+          <Col style={style.SkillsetColStyle}>
+            <DiPython style={style.SkillsetIconStyle} />
+          </Col>
+        </div>
+      </Row>
+    </>
+  );
+};
 
-export default skillset
+export default skillset;

@@ -6,89 +6,47 @@ import AboutContent from "./aboutContent";
 import laptopImg from "../../Assests/about_image .png";
 import Tools from "./tools";
 import GithubStats from "./githubStats";
-
+import style from "./styles.about";
 
 const About = () => {
   return (
     <Container fluid className="about-section">
       <Container>
-        <Row
-          style={{
-            justifyContent: "center",
-            marginTop: "6rem",
-            color: "white",
-            textAlign: "center",
-            display: "flex",
-          }}
-        >
-          <Col
-            md={7}
-            style={{
-              marginTop: "3rem",
-              justifyContent: "center",
-            }}
-          >
-            <h1 style={{ fontSize: "2.5rem", paddingBottom: "1rem" }}>
+        <Row style={style.AboutRow1Style}>
+          <Col md={7} style={style.AboutRow1Col1Style}>
+            <h1 style={style.AboutRow1Col1HeadingStyle}>
               Know Who{" "}
-              <strong style={{ color: "#4DD0E1", fontFamily: "cursive" }}>
-                I'M
-              </strong>
+              <strong style={style.AboutRowStrongCommonStyle}>I'M</strong>
             </h1>
             <AboutContent />
           </Col>
-          <Col  style={{ paddingTop: "6.5rem" }} className="about-img">
+          <Col style={style.AboutRow1Col2Style} className="about-img">
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
         <Row>
           <Col>
-            <h1
-              style={{
-                color: "white",
-                marginTop: "3rem",
-                marginLeft: "25rem",
-                fontSize: "3rem",
-              }}
-            >
-              Professional{" "}
-              <span style={{ color: "#4DD0E1", fontFamily: "cursive" }}>
-                {" "}
-                Skillset{" "}
-              </span>
+            <h1 style={style.AboutRowHeadingCommonStyle}>
+              Professional
+              <span style={style.AboutRowStrongCommonStyle}>Skillset</span>
             </h1>
             <Skillset />
           </Col>
         </Row>
         <Row>
           <Col>
-            <h1
-              style={{
-                color: "white",
-                marginTop: "4rem",
-                marginLeft: "32rem",
-                fontSize: "3rem",
-              }}
-            >
-              <span style={{ color: "#4DD0E1", fontFamily: "cursive" }}>
-                Tools{" "}
-              </span>
-              I use{" "}
+            <h1 style={style.AboutRowHeadingCommonStyle}>
+              <span style={style.AboutRowStrongCommonStyle}>Tools</span>
+              <h1 style={style.AboutRowStrongH1CommonStyle}>I use</h1>
             </h1>
             <Tools />
           </Col>
         </Row>
         <Row>
           <Col>
-            <h1
-              style={{
-                color: "white",
-                marginTop: "4rem",
-                marginLeft: "22rem",
-                fontSize: "3rem",
-              }}
-            >
+            <h1 style={style.AboutRowHeadingCommonStyle}>
               Checkout{" "}
-              <span style={{ color: "#4DD0E1", fontFamily: "cursive" }}>
+              <span style={style.AboutRowStrongCommonStyle}>
                 {" "}
                 Coding Profiles
               </span>
@@ -98,19 +56,9 @@ const About = () => {
         </Row>
         <Row>
           <Col>
-            <h1
-              style={{
-                color: "white",
-                marginTop: "4rem",
-                marginLeft: "31rem",
-                fontSize: "3rem",
-              }}
-            >
-               <span style={{ color: "#4DD0E1", fontFamily: "cursive" }}>
-                {" "}
-                 Github{" "}
-              </span>
-              Stats  
+            <h1 style={style.AboutRowHeadingCommonStyle}>
+              <span style={style.AboutRowStrongCommonStyle}> Github </span>
+              <h1 style={style.AboutRowStrongH1CommonStyle}> Stats </h1>
             </h1>
             <GithubStats />
           </Col>
