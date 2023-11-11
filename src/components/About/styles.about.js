@@ -53,6 +53,15 @@ const AboutContentTextInlineStyle = {
   display: "inline-block",
   marginLeft: "3rem",
 };
+const AboutContentFooterStyle = {
+  marginLeft: "15rem",
+  fontSize: "1.3rem",
+};
+const AboutContentQuoteDivStyle = {
+  marginTop: "2rem",
+  marginLeft: "5rem",
+};
+
 const SkillsetRowStyle = {
   marginLeft: "1.5rem",
   justifyContent: "center",
@@ -75,7 +84,7 @@ const SkillsetIconStyle = {
   height: "5rem",
 };
 const SkillsetDivStyle = {
-  marginTop: "2rem",
+  marginTop: "1.5rem",
 };
 
 const style = {
@@ -91,6 +100,8 @@ const style = {
   AboutContentActivitiesStyle,
   AboutContentIconInlineStyle,
   AboutContentTextInlineStyle,
+  AboutContentFooterStyle,
+  AboutContentQuoteDivStyle,
   SkillsetRowStyle,
   SkillsetColStyle,
   SkillsetIconStyle,

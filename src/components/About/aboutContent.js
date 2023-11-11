@@ -59,7 +59,7 @@ const aboutContent = () => {
             </h1>
             Additionally, I was former Software Engineer Intern at{" "}
             <span style={style.AboutRowStrongCommonStyle}>Microsoft</span>.
-            <h1 style={{ marginTop: "1.5rem" }}>
+            <h1 style={style.SkillsetDivStyle}>
               Apart from coding, some other activities that I love to do!
             </h1>
           </p>
@@ -79,10 +79,17 @@ const aboutContent = () => {
               <h1 style={style.AboutContentTextInlineStyle}>Travelling</h1>
             </li>
           </ul>
-          {/* <p style={{ color: "rgb(155 126 172)" }}>
-          "Strive to build things that make a difference!"{" "}
-        </p>
-        <footer className="blockquote-footer">Lalit</footer> */}
+          <div style={style.AboutContentQuoteDivStyle}>
+            <p style={style.AboutRowStrongCommonStyle}>
+              "Keep coding, Keep Impacting the digital world!"{" "}
+            </p>
+            <footer
+              style={style.AboutContentFooterStyle}
+              className="blockquote-footer"
+            >
+              Lalit
+            </footer>
+          </div>
         </blockquote>
       </Card.Body>
     </Card>
