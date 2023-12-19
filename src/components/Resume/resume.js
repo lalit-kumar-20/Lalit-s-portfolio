@@ -18,7 +18,7 @@ const ResumeNew = () => {
 
   return (
     <div>
-      <Container>
+      <Container style={{marginTop:'5rem'}}>
         <Row style={style.RowStyle}>
           <Button href={pdf} target="_blank" style={style.Button1Style}>
             <AiOutlineDownload style={style.ButtonIconStyle} />

@@ -4,10 +4,10 @@ import logo from "../Assests/home.png";
 import aboutlogo from "../Assests/info.png";
 import resumelogo from "../Assests/resume.png";
 import projectlogo from "../Assests/project.png";
+import CMlogo from "../Assests/CM.png";
 import bloglogo from "../Assests/blog.png";
 import profilelogo from "../Assests/logoProfile.png";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 
 import { AiFillStar } from "react-icons/ai";
@@ -81,6 +81,21 @@ const NavBaar = () => {
             >
               {" "}
               Resume
+            </a>
+            <img
+              style={style.NavbarRoutinglogoStyle}
+              src={CMlogo}
+              className="img-fluid logo "
+              alt="brand"
+            />
+
+            <a
+              style={style.NavbarAnchorTagStyle}
+              className="navbar-brand ms-auto"
+              href="/contactme"
+            >
+              {" "}
+              Contact Me
             </a>
 
             <img

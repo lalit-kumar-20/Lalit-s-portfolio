@@ -1,13 +1,16 @@
 const NavbarlogoStyle = {
   alignItems: "center",
-  marginLeft: "3rem",
+  marginLeft: "0rem",
   display: "flex",
   borderRadius: "5rem",
   width: "9rem",
   height: "5.7rem",
 };
 const NavbarTextStyle = {
-  marginLeft: "23rem",
+  display:'flex',
+  alignItem:'center',
+  justifyContent:'center',
+  marginLeft: "10rem",
   marginTop: "0rem",
   fontFamily: "sans-serif",
   fontSize: "large",
@@ -27,6 +30,8 @@ const NavbarAnchorTagStyle = {
 };
 const NavbarMediumButtonStyle = {
   color: "white",
+  fontFamily: "sans-serif",
+  fontSize: "large",
   marginRight: "2.6rem",
   border: "1px solid black",
 };

@@ -11,7 +11,7 @@ import style from "./styles.about";
 const About = () => {
   return (
     <Container fluid className="about-section">
-      <Container>
+      <Container style={{marginTop:'12rem'}}>
         <Row style={style.AboutRow1Style}>
           <Col md={7} style={style.AboutRow1Col1Style}>
             <h1 style={style.AboutRow1Col1HeadingStyle}>

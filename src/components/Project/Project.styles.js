@@ -1,7 +1,7 @@
 const projectContainerStyle = {
   color: "white",
   marginBottom: "2rem",
-  marginTop: "10rem",
+  marginTop: "14rem",
 };
 const projectContentRowStyle = {
   justifyContent: "center",

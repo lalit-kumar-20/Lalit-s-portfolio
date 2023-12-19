@@ -6,6 +6,7 @@ import ParticleBackground from "./components/particles";
 import Resume from "./components/Resume/resume";
 import About from "./components/About/about";
 import Project from "./components/Project/project";
+import ContactMe from "./components/ContactMe/contact_me";
 import {
   BrowserRouter as Router,
   Route,
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/project" element={<Project />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/resume" element={<Resume />} />
+          <Route exact path="/contactme" element={<ContactMe />} />
         </Routes>
         <Footer />
       </Router>

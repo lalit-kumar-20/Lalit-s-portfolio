@@ -5,13 +5,17 @@ import iNoteBookIcon from "../../Assests/iNotebook_image.png";
 import MSDesigner_Logo from "../../Assests/MS_Designer_logo.png";
 import GlobalNews_logo from "../../Assests/global_news_logo.png";
 import MR_Engine_logo from "../../Assests/MR_Engine.jpeg";
+import ZipCodeImg from "../../Assests/ZipCodeinfoImage.png";
 import TextAnalyzer_logo from "../../Assests/Text_Analyzer_logo.jpeg";
+import QPG from "../../Assests/QPG.png";
+import PCD from "../../Assests/PCD.png";
+import SMS from "../../Assests/SMS.png";
 
 import styles from "./Project.styles";
 
 const Project = () => {
   return (
-    <div>
+    <div >
       <Container style={styles.projectContainerStyle}>
         <Row style={styles.projectContentRowStyle}>
           <h1 style={styles.projectheadingRowStyle}>
@@ -48,6 +52,46 @@ const Project = () => {
               user friendly web app."
               ghLink="https://github.com/lalit-kumar-20/iNotebook"
               demoLink="https://dulcet-druid-8a8e3c.netlify.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ZipCodeImg}
+              isBlog={false}
+              title="ZipCodeInfo_WebApp"
+              description="ZipCodeInfo is a Full Stack web application based on MERN Technologies  that takes input as ZipCode from user and fetch the details regarding that Zip Code with the help of an API. The API return a json having the list of the area that falls under that entered Zip Code.There is a beautiful loader functionality while fetching the info related to that Zip Code. Incase of no info there is a message saying info not found!."
+              ghLink="https://github.com/lalit-kumar-20/ZipCodeInfo_WebApp"
+              demoLink="https://zip-code-info-web-app-pfum.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={SMS}
+              isBlog={false}
+              title="Student Management System"
+              description="A powerful Login and Authentication System Role based authentication and authorization. Student Details Displays the details of all the students, and provides following services: Adding a new student, Editing / Modifying the data of an existing student, Deleting / Removing the data of an existing student."
+              ghLink="https://github.com/lalit-kumar-20/Student-management-system"
+              // demoLink=""
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={QPG}
+              isBlog={false}
+              title="Question Paper Generator"
+              description="QPG is a web application is Full Stack MERN Aplication that store a number of questions in a Question Store. A question have the following attributes {question, subject, topic, difficulty, marks}. The Question paper Generator looks for questions in the Question Store and then generate the question paper based on the total marks and the distribution of marks based on *Difficulty Levels*"
+              ghLink="https://github.com/lalit-kumar-20/Question_Paper_Generator"
+              demoLink="https://question-paper-generator-eight.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={PCD}
+              isBlog={false}
+              title="Profile Card Displayer"
+              description="It is majorily a Front-End Web Application that display the Profile Card fetched from the dummy data present there in json file.This application has the functionalities like add to favorites,update the card, and delete the card. This application is designed using CSS and it is a beautiful responsive web Application"
+              ghLink="https://github.com/lalit-kumar-20/NeenOpal_task"
+              demoLink="https://neen-opal-task.vercel.app/"
             />
           </Col>
           <Col md={4} className="project-card">
